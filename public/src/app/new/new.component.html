@@ -1,0 +1,9 @@
+<div class="newForm">
+  <h1>Add a new author: </h1>
+  <form (submit)="addNewAuthor()">
+    <label for="Name">Name: </label>
+    <input type="text" [(ngModel)]="newName" name="newName">
+    <input type="submit">
+  </form>
+</div>
+<div *ngIf="errorMsg">{{errorMsg}}</div>

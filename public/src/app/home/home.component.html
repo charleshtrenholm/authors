@@ -1,0 +1,4 @@
+<ul *ngFor ="let name of allNames">
+  <li>{{name.name}} <button [routerLink]="['/edit/', name._id]">edit</button><button (click)="deleteAuthor(name._id)">Delete</button></li>
+</ul>
+
